@@ -96,7 +96,7 @@ html,body{
 ------------------------------------- */
 
 body{
-  font:14px/21px 'Roboto', 'sans-serif';
+  font:19px/21px 'Roboto', 'sans-serif';
   color: #3e454c;
   background: #fff;
   -webkit-backface-visibility: hidden;
@@ -249,6 +249,10 @@ h1,h2,h3,h4,h5{
   color: #212428;
   line-height: 1.3em;
   font-weight: bold;
+}
+
+h1{
+  font-size: 24px;
 }
 
 h2{
