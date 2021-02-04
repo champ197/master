@@ -102,6 +102,7 @@ body{
   -webkit-backface-visibility: hidden;
   background-attachment: fixed;
   overflow-x: hidden;
+  line-height: 1.4;
 }
 
 .loader{
@@ -260,15 +261,15 @@ h2{
 }
 
 h3{
-  font-size: 16px;
+  font-size: 22px;
 }
 
 h4{
-  font-size: 14px;
+  font-size: 21px;
 }
 
 h5{
-  font-size: 12px;
+  font-size: 21px;
 }
 
 a,
