@@ -28,7 +28,7 @@ IMAGE_URL = "https://famast.com/genimgg.php?g="      # บริการสร�
 # เปลี่ยนได้ด้วย env GEMINI_MODEL เช่น  GEMINI_MODEL=gemini-2.5-flash
 MODELS = [m for m in [os.environ.get("GEMINI_MODEL")] if m] + [
     "gemini-2.0-flash",
-    "gemini-2.5-flash",
+    "gemini-3.8-flash",
     "gemini-flash-latest",
 ]
 
