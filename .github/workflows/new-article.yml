@@ -1,0 +1,48 @@
+name: สร้างบทความใหม่ (Gemini)
+run-name: "บทความ: ${{ inputs.title }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      title:
+        description: "หัวข้อบทความ"
+        required: true
+        type: string
+      notes:
+        description: "ความต้องการเพิ่มเติม (ไม่ใส่ก็ได้)"
+        required: false
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: new-article
+  cancel-in-progress: false
+
+jobs:
+  create:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: เขียนบทความด้วย Gemini และอัปเดต index.html
+        id: gen
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          ARTICLE_TITLE: ${{ inputs.title }}
+          ARTICLE_NOTES: ${{ inputs.notes }}
+        run: python3 scripts/new_article.py
+
+      - name: Commit และ push
+        env:
+          FILE: ${{ steps.gen.outputs.filename }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- "$FILE" index.html
+          git commit -m "เพิ่มบทความ: $FILE"
+          git pull --rebase
+          git push
