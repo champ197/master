@@ -27,9 +27,9 @@ IMAGE_URL = "https://famast.com/genimgg.php?g="      # บริการสร�
 # ลองตามลำดับ: ถ้ารุ่นแรกใช้ไม่ได้ (ถูกปิดแล้ว) จะลองรุ่นถัดไปให้อัตโนมัติ
 # เปลี่ยนได้ด้วย env GEMINI_MODEL เช่น  GEMINI_MODEL=gemini-2.5-flash
 MODELS = [m for m in [os.environ.get("GEMINI_MODEL")] if m] + [
-    "gemini-2.0-flash",
+    "gemini-3.1-pro-preview",
     "gemini-3.8-flash",
-    "gemini-flash-latest",
+    "gemini-3.5-flash",
 ]
 
 PROMPT = """คุณคือ อาจารย์แชมป์ ธิติพล เทียมจันทร์ ผู้ก่อตั้ง BrandingChamp ที่ปรึกษาการตลาดออนไลน์ และวิทยากรด้าน AI Marketing
