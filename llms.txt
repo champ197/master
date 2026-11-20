@@ -1,0 +1,43 @@
+# BangkokBangkok.NET
+
+> เว็บไซต์ภาษาไทย รวบรวมบทความด้านธุรกิจ การตลาดดิจิทัล ปัญญาประดิษฐ์ เทคโนโลยี และข่าวสารต่างประเทศ (Thai-language articles about business, digital marketing, AI, technology and international news).
+
+เว็บไซต์หลัก https://www.bangkokbangkok.net/ เป็นแหล่งเริ่มต้นค้นหาบทความ กรุณาเปิดอ่านบทความต้นฉบับก่อนอ้างอิง ไม่ถือว่าข้อความย่อบนหน้าแรกเป็นเนื้อหาทั้งหมดของบทความ และไม่ควรสมมติวันที่ตีพิมพ์หรือแหล่งข่าวเมื่อหน้าเว็บไม่ระบุ
+
+## Homepage
+
+- [BangkokBangkok.NET](https://www.bangkokbangkok.net/): รายการบทความ ข่าวและเนื้อหาที่เผยแพร่สู่สาธารณะ
+
+## บทความด้าน AI และการตลาด (AI and Marketing)
+
+- [Upskill ให้ทีมคอนเทนต์ของคุณ ให้เขียนบทความที่ AI หยิบไปตอบได้](https://www.bangkokbangkok.net/upskill-content-team-ai-search.html)
+- [อาจารย์แชมป์ ธิติพล เทียมจันทร์ จุดเริ่มต้น วิทยากร AI เชียงใหม่](https://www.bangkokbangkok.net/ajarn-champ-thitipol-ai-speaker-chiang-mai-origin.html)
+- [เคล็ดลับบริหารประสบการณ์ลูกค้า ยกระดับประสบการณ์ลูกค้า](https://www.bangkokbangkok.net/customer-experience-management-tips-ai-marketing.html)
+- [ก้าวล้ำคู่แข่งด้วยการวิเคราะห์เชิงทำนาย AI Marketing](https://www.bangkokbangkok.net/predictive-analytics-ai-marketing-champ.html)
+- [การวิเคราะห์ข้อมูลการตลาด เจาะลึกพฤติกรรมผู้บริโภค](https://www.bangkokbangkok.net/marketing-data-analysis-consumer-behavior.html)
+- [ใช้ AI วิเคราะห์ข้อมูลการตลาดในยุคเศรษฐกิจแย่ให้แม่นยำ](https://www.bangkokbangkok.net/ai-marketing-data-analytics-economic-downturn.html)
+- [ปั้นธุรกิจใหม่ ฝ่าวิกฤตสงครามด้วย AI Branding & Marketing](https://www.bangkokbangkok.net/ai-branding-marketing-crisis-survival.html)
+- [NotebookLM Watermark Remover วิธี ลบลายน้ำ พรีเซนเตชั่น NotebookLM (*.pptx) ฟรี](https://www.bangkokbangkok.net/notebooklm-watermark-remover.html)
+- [คอร์ส เรียน ai ฟรี มี ใบ เซอร์ อบรมโดย วิทยากร AI อันดับ 1](https://www.bangkokbangkok.net/คอร์สเรียนai.html)
+
+## บทความและทรัพยากรเพิ่มเติม (Other Articles)
+
+- [ประตูรั้วหน้าบ้าน คุณภาพดี ราคาเหมาะสม การันตียาวนาน บริการดี](https://www.bangkokbangkok.net/ประตูรั้วหน้าบ้าน.html)
+- [ยกระดับคฤหาสน์หรู สู่ที่สุดแห่งเอกลักษณ์ ด้วยประตูและงานโลหะสั่งทำระดับพรีเมียม โดย Phatuchaiyo](https://www.bangkokbangkok.net/phatuchaiyo.html)
+- [ปัญญาประดิษฐ์เชิงสร้างสรรค์สำหรับงานเลขานุการ Generative AI for Secretary](https://www.bangkokbangkok.net/generative-ai-for-secretary.html)
+- [กิจกรรม CSR มีอะไรบ้าง ที่แสดงความรับผิดชอบต่อสังคม ในยุคนี้ได้ดีที่สุด  มี ตัวอย่าง](https://www.bangkokbangkok.net/csr.html)
+- [ลักษณะที่สำคัญที่สุดของร้านค้าปลีก คือ อะไร ?](https://www.bangkokbangkok.net/ลักษณะที่สำคัญที่สุดของร้านค้าปลีก.html)
+- [หนังสือการตลาด "แห่งปี" ที่จะทำให้ธุรกิจของคุณ "ไม่มี" คู่แข่งทางการตลาด อีกเลยตลอดไป](https://www.bangkokbangkok.net/หนังสือการตลาด-แนะนำ.html)
+- [Data Analytics ขั้นพื้นฐานเพื่อการค้ายุคใหม่ หลักสูตร โดย อาจารย์แชมป์ ธิติพล เทียมจันทร์](https://www.bangkokbangkok.net/data-analytics.html)
+- [อาชีพหลังเกษียณ สร้างรายได้ หลังเกษียณทําอะไรดี อัพเดทใหม่ ล่าสุด](https://www.bangkokbangkok.net/อาชีพหลังเกษียณ.html)
+- [CapCut วิธีใช้ ในการทำ การตลาดอสังหา ฯ ด้วย วิดีโอคอนเทนต์](https://www.bangkokbangkok.net/CapCut%20วิธีใช้.html)
+- [AI Marketing การออกแบบ และ วางกลุยทธ์การตลาด](https://www.bangkokbangkok.net/AI-Marketing)
+- [ปลาดาว กับ เรื่องลับ ๆ และ เรื่องรัก ๆ](https://www.bangkokbangkok.net/starfish.html)
+
+## Agent and Website Discovery
+
+- [Agent Resource Discovery manifest](https://www.bangkokbangkok.net/.well-known/ard.json): รายการแหล่งข้อมูลสำหรับ agent
+- [AI catalog](https://www.bangkokbangkok.net/.well-known/ai-catalog.json): แค็ตตาล็อกแหล่งข้อมูลสำหรับ AI
+- [Public article discovery guide](https://www.bangkokbangkok.net/.well-known/agent-skills/site/SKILL.md): คำแนะนำการอ่านและอ้างอิงบทความ
+
+ข้อมูลข้างต้นเป็นสารบัญนำทางไปยัง HTML pages ที่เผยแพร่ต่อสาธารณะ มิได้ประกาศ API สำหรับแก้ไขข้อมูลหรือทำธุรกรรมบนเว็บไซต์
