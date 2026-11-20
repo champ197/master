@@ -1,0 +1,30 @@
+{
+  "entries": [
+    {
+      "identifier": "urn:air:bangkokbangkok.net:skill:content-discovery",
+      "displayName": "BangkokBangkok.NET Public Article Discovery",
+      "type": "application/agent-skills+md",
+      "url": "https://www.bangkokbangkok.net/agent-skill.md",
+      "description": "Read-only guidance for finding, reading and citing public BangkokBangkok.NET articles about business, digital marketing, AI, technology and international news. It does not provide an API or an interactive agent service.",
+      "tags": [
+        "Thailand",
+        "Thai-language news",
+        "digital marketing",
+        "AI",
+        "business",
+        "articles"
+      ],
+      "capabilities": [
+        "public-article-discovery",
+        "read-only-web-navigation",
+        "source-citation"
+      ],
+      "representativeQueries": [
+        "Find BangkokBangkok.NET articles on AI and digital marketing in Thailand",
+        "What does BangkokBangkok.NET say about business and marketing?",
+        "Summarize a BangkokBangkok.NET article and link to the original source"
+      ],
+      "version": "1.0.0"
+    }
+  ]
+}
