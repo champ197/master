@@ -11,7 +11,7 @@
 </script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>ข่าวการตลาด ธุรกิจ เทคโนโลยี และ ข่าวต่างประเทศ | BangkokBangkok.NET</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="ข่าวการตลาด ธุรกิจ เทคโนโลยี ข่าวต่างประเทศ">
   <meta name="description" content="ข่าวการตลาด ธุรกิจ เทคโนโลยี และ ข่าวต่างประเทศ เนื้อหา/ข้อมูล/ความรู้ และบทสัมภาษณ์ คนดัง นักธุรกิจ และ ผู้เชี่ยวชาญ พื้นที่ความเห็นต่างสำหรับคนยุคใหม่ที่ต้องการเข้าถึงสารสนเทศในปัจจุบันแบบทันเหตุกาล">
   <link rel="shortcut icon" type="image/x-icon" href="./files/favicon.ico">
@@ -45,9 +45,50 @@
 
 
 
+  <!-- Accessibility and layout-stability enhancements for Lighthouse Agentic Browsing -->
+  <style id="agentic-accessibility-layout-stability">
+    .skip-to-main {
+      position: absolute; left: 12px; top: -100px; z-index: 10000;
+      padding: 12px 16px; background: #fff; color: #111;
+      border: 2px solid #222; border-radius: 4px;
+    }
+    .skip-to-main:focus { top: 12px; }
+    .visually-hidden-heading {
+      position: absolute !important; width: 1px; height: 1px;
+      padding: 0; margin: -1px; overflow: hidden;
+      clip-path: inset(50%); white-space: nowrap; border: 0;
+    }
+    .logo { display: inline-block; }
+    .logo img {
+      display: block; width: 240px; height: auto;
+      max-width: 100%; aspect-ratio: 15 / 4;
+      object-fit: contain;
+    }
+    .scale_image_container {
+      aspect-ratio: 8 / 5;
+      height: auto;
+      overflow: hidden;
+    }
+    .scale_image_container > a {
+      display: block; width: 100%; height: 100%;
+    }
+    .scale_image_container img {
+      display: block; width: 100%; height: 100%;
+      aspect-ratio: 8 / 5; object-fit: cover;
+    }
+    /* Ensure keyboard location remains visible on all interactive elements. */
+    a:focus-visible, button:focus-visible {
+      outline: 3px solid #176fc1; outline-offset: 3px;
+    }
+    @media (max-width: 767px) {
+      #main-navigation.is-open { display: block !important; visibility: visible !important; }
+    }
+  </style>
+
 </head>
 
-<body class="wide_layout" cz-shortcut-listen="true">
+<body class="wide_layout">
+  <a class="skip-to-main" href="#main-content">ข้ามไปยังเนื้อหาหลัก</a>
 
   <!--<div class="loader"></div>-->
   <div class="wrapper_container">
@@ -61,18 +102,18 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-2 col-xs-12" style="padding-top:8px;">
-              <a href="https://www.bangkokbangkok.net/" class="logo">
-				<img src="./files/logo_bangkokbangkok_net.png" alt="">
+              <a href="https://www.bangkokbangkok.net/" class="logo" aria-label="BangkokBangkok.NET หน้าแรก">
+				<img src="./files/logo_bangkokbangkok_net.png" alt="BangkokBangkok.NET" width="240" height="64" decoding="async" loading="eager">
 			  </a>
             </div>
             <div class="col-lg-10 col-xs-12">
               <div class="clearfix">
                 <!--button for responsive menu-->
-                <button id="menu_button">
+                <button id="menu_button" type="button" aria-controls="main-navigation" aria-expanded="false" aria-label="เปิดหรือปิดเมนูหมวดหมู่ข่าว">
                   Menu
                 </button>
                 <!--main menu-->
-                <nav role="navigation" class="main_menu menu_var3">  
+                <nav id="main-navigation" aria-label="หมวดหมู่ข่าวหลัก" class="main_menu menu_var3">  
                   <ul>
 	
                     <li><a href=".">ธุรกิจ<span class="plus"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span></a>
@@ -111,9 +152,10 @@
         </div>
       </div>    </header>
     <!--==============================content================================-->
-    <div class="content">
+    <main class="content" id="main-content">
       <div class="container">
-		        <div class="section_date">
+		        <h1 class="visually-hidden-heading">ข่าวการตลาด ธุรกิจ เทคโนโลยี และข่าวต่างประเทศ</h1>
+		<div class="section_date">
             <div class="row">
               <div class="col-sm-10 col-xs-5">
                 <span><a href="https://www.bangkokbangkok.net/" title="">หน้าแรก</a></span>
@@ -135,7 +177,7 @@
 				<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./upskill-content-team-ai-search.html">
-											<img src="https://famast.com/genimgg.php?g=Thai+business+owner+using+AI+dashboard+in+modern+Bangkok+office%2C+photorealistic%2C+vertical" class="scale_image" alt="กลยุทธ์ปั้นทีมคอนเทนต์ให้เชี่ยวชาญ AI Search และเพิ่มการมองเห็นแบรนด์" title="กลยุทธ์ปั้นทีมคอนเทนต์ให้เชี่ยวชาญ AI Search และเพิ่มการมองเห็นแบรนด์">
+											<img src="https://famast.com/genimgg.php?g=Thai+business+owner+using+AI+dashboard+in+modern+Bangkok+office%2C+photorealistic%2C+vertical" class="scale_image" alt="กลยุทธ์ปั้นทีมคอนเทนต์ให้เชี่ยวชาญ AI Search และเพิ่มการมองเห็นแบรนด์" title="กลยุทธ์ปั้นทีมคอนเทนต์ให้เชี่ยวชาญ AI Search และเพิ่มการมองเห็นแบรนด์" width="640" height="400" decoding="async" loading="eager" fetchpriority="high">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -148,7 +190,7 @@
 				<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./ajarn-champ-thitipol-ai-speaker-chiang-mai-origin.html">
-											<img src="https://famast.com/genimgg.php?g=Thai+male+speaker+presenting+AI+marketing+on+stage+in+modern+Chiang+Mai+hall%2C+photorealistic%2C+vertical" alt="เส้นทางสู่ที่ปรึกษาเบอร์ 1 เริ่มต้นจากบทบาท วิทยากร AI เชียงใหม่" title ="เส้นทางสู่ที่ปรึกษาเบอร์ 1 เริ่มต้นจากบทบาท วิทยากร AI เชียงใหม่" class="scale_image">
+											<img src="https://famast.com/genimgg.php?g=Thai+male+speaker+presenting+AI+marketing+on+stage+in+modern+Chiang+Mai+hall%2C+photorealistic%2C+vertical" alt="เส้นทางสู่ที่ปรึกษาเบอร์ 1 เริ่มต้นจากบทบาท วิทยากร AI เชียงใหม่" title ="เส้นทางสู่ที่ปรึกษาเบอร์ 1 เริ่มต้นจากบทบาท วิทยากร AI เชียงใหม่" class="scale_image" width="640" height="400" decoding="async" loading="eager">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -161,7 +203,7 @@
 				<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./customer-experience-management-tips-ai-marketing.html">
-											<img src="https://famast.com/genimgg.php?g=Thai+customer+smiling+using+smartphone+in+modern+Bangkok+cafe%2C+photorealistic%2C+vertical%2C+vibrant+lighting%2C+AI+marketing+concept" alt="กลยุทธ์ AI Marketing พลิกโฉมธุรกิจไทยด้วย CX ที่เหนือกว่า" title ="กลยุทธ์ AI Marketing พลิกโฉมธุรกิจไทยด้วย CX ที่เหนือกว่า" class="scale_image">
+											<img src="https://famast.com/genimgg.php?g=Thai+customer+smiling+using+smartphone+in+modern+Bangkok+cafe%2C+photorealistic%2C+vertical%2C+vibrant+lighting%2C+AI+marketing+concept" alt="กลยุทธ์ AI Marketing พลิกโฉมธุรกิจไทยด้วย CX ที่เหนือกว่า" title ="กลยุทธ์ AI Marketing พลิกโฉมธุรกิจไทยด้วย CX ที่เหนือกว่า" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -174,7 +216,7 @@
 				<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./predictive-analytics-ai-marketing-champ.html">
-											<img src="https://famast.com/genimgg.php?g=Thai+marketing+expert+analyzing+predictive+data+on+transparent+screen+in+modern+Bangkok+office%2C+photorealistic" alt="ถอดรหัสการวิเคราะห์เชิงทำนาย สร้างยอดขายแบบไม่ต้องเดา" title ="ถอดรหัสการวิเคราะห์เชิงทำนาย สร้างยอดขายแบบไม่ต้องเดา" class="scale_image">
+											<img src="https://famast.com/genimgg.php?g=Thai+marketing+expert+analyzing+predictive+data+on+transparent+screen+in+modern+Bangkok+office%2C+photorealistic" alt="ถอดรหัสการวิเคราะห์เชิงทำนาย สร้างยอดขายแบบไม่ต้องเดา" title ="ถอดรหัสการวิเคราะห์เชิงทำนาย สร้างยอดขายแบบไม่ต้องเดา" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -187,7 +229,7 @@
 				<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./marketing-data-analysis-consumer-behavior.html">
-											<img src="https://famast.com/genimgg.php?g Photorealistic+image+of+a+sleek+Bangkok+high-rise+office" alt="กลยุทธ์ AI Marketing พลิกเกมธุรกิจยุคดิจิทัลด้วย Data" title ="กลยุทธ์ AI Marketing พลิกเกมธุรกิจยุคดิจิทัลด้วย Data" class="scale_image">
+											<img src="https://famast.com/genimgg.php?g=Photorealistic+image+of+a+sleek+Bangkok+high-rise+office" alt="กลยุทธ์ AI Marketing พลิกเกมธุรกิจยุคดิจิทัลด้วย Data" title ="กลยุทธ์ AI Marketing พลิกเกมธุรกิจยุคดิจิทัลด้วย Data" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -200,7 +242,7 @@
 				<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./ai-marketing-data-analytics-economic-downturn.html">
-											<img src="https://famast.com/genimgg.php?g=Thai+business+professionals+in+a+modern+Bangkok+office" alt="กลยุทธ์ปั้นยอดขายด้วย AI Marketing เมื่อลูกค้าคิดก่อนจ่าย" title ="กลยุทธ์ปั้นยอดขายด้วย AI Marketing เมื่อลูกค้าคิดก่อนจ่าย" class="scale_image">
+											<img src="https://famast.com/genimgg.php?g=Thai+business+professionals+in+a+modern+Bangkok+office" alt="กลยุทธ์ปั้นยอดขายด้วย AI Marketing เมื่อลูกค้าคิดก่อนจ่าย" title ="กลยุทธ์ปั้นยอดขายด้วย AI Marketing เมื่อลูกค้าคิดก่อนจ่าย" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -213,7 +255,7 @@
 				<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./ai-branding-marketing-crisis-survival.html">
-											<img src="https://famast.com/genimgg.php?g%20branding%20strategies%20in%20tough%20time%20in%20modern%20Thailand" alt="กลยุทธ์สร้างแบรนด์ยุคของแพงและต้นทุนพุ่งทะยานฉบับอาจารย์แชมป์" title ="กลยุทธ์สร้างแบรนด์ยุคของแพงและต้นทุนพุ่งทะยานฉบับอาจารย์แชมป์" class="scale_image">
+											<img src="https://famast.com/genimgg.php?g=branding+strategies%20in%20tough%20time%20in%20modern%20Thailand" alt="กลยุทธ์สร้างแบรนด์ยุคของแพงและต้นทุนพุ่งทะยานฉบับอาจารย์แชมป์" title ="กลยุทธ์สร้างแบรนด์ยุคของแพงและต้นทุนพุ่งทะยานฉบับอาจารย์แชมป์" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -226,7 +268,7 @@
 				<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="https://www.bangkokbangkok.net/notebooklm-watermark-remover.html">
-											<img src="https://www.bangkokbangkok.net/NotebookLM-logo-remove.png">
+											<img src="https://www.bangkokbangkok.net/NotebookLM-logo-remove.png" alt="NotebookLM Watermark Remover วิธี ลบลายน้ำ พรีเซนเตชั่น NotebookLM (*.pptx) ฟรี" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -241,7 +283,7 @@
 								<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./คอร์สเรียนai.html">
-											<img src="https://www.bangkokbangkok.net/%E0%B8%84%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%AA%20%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%20ai%20%E0%B8%9F%E0%B8%A3%E0%B8%B5.png">
+											<img src="https://www.bangkokbangkok.net/%E0%B8%84%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%AA%20%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%20ai%20%E0%B8%9F%E0%B8%A3%E0%B8%B5.png" alt="คอร์ส เรียน ai ฟรี มี ใบ เซอร์ อบรมโดย วิทยากร AI อันดับ 1" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -256,13 +298,13 @@
 		<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./LINE-Certified-Coach.html">
-											<img src="LINE Certified Coach - .png" alt="LINE Certified Coach" title ="LINE Certified Coach" class="scale_image">
+											<img src="LINE Certified Coach - .png" alt="LINE Certified Coach" title ="LINE Certified Coach" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
 
                       <div class="post_text">
-			      <h3 class="post_title"><a href="LINE-Certified-Coach.html">LINE Certified Coach by LINE Yahoo Marketing Skill Badge Certification Program [อัพเดทล่าสุด] </h3>
+			      <h3 class="post_title"><a href="LINE-Certified-Coach.html">LINE Certified Coach by LINE Yahoo Marketing Skill Badge Certification Program [อัพเดทล่าสุด] </a></h3>
 				<p>LINE Certified Coach คือ หนึ่งรูปแบบการทำโปรโมชั่นเพื่อดึงดูดลูกค้า หรือ ผู้ใช้ไลน์ในการทำธุรกิจ ( LINE for business ) ให้หันมาลงทุนทำตลาดผ่านแอพฯใหม่ที่ มาแทน LINE@ (ไลน์แอด) แบบเดิม ที่ชื่อว่า LINE Official Account ด้วยการ...</p>
                       </div>
                     </div>
@@ -271,7 +313,7 @@
 						<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./ประตูรั้วหน้าบ้าน.html">
-											<img src="https://www.bangkokbangkok.net//%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%95%E0%B8%B9%E0%B8%A3%E0%B8%B1%E0%B9%89%E0%B8%A7%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99.png" title ="ประตูรั้วหน้าบ้าน" class="scale_image">
+											<img src="https://www.bangkokbangkok.net//%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%95%E0%B8%B9%E0%B8%A3%E0%B8%B1%E0%B9%89%E0%B8%A7%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99.png" title ="ประตูรั้วหน้าบ้าน" class="scale_image" alt="ประตูรั้วหน้าบ้าน คุณภาพดี ราคาเหมาะสม การันตียาวนาน บริการดี" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -287,7 +329,7 @@
 						<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./phatuchaiyo.html">
-											<img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqeQbSJuD8mQ_7Ypd1L1H0rSGNFqKWCLbUKNo2ycqP10JTBY1AOG6kqMgE3xlu1TP8YICaXLUCpx_GLdsUNd66MWQt2fue5GCphfUuWCS3QSrPLDprBmpToO7M11Y7_4LMhFtSj=s1360-w1360-h1020-rw" title ="ประตูรั้วคฤหาสน์หรู" class="scale_image">
+											<img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqeQbSJuD8mQ_7Ypd1L1H0rSGNFqKWCLbUKNo2ycqP10JTBY1AOG6kqMgE3xlu1TP8YICaXLUCpx_GLdsUNd66MWQt2fue5GCphfUuWCS3QSrPLDprBmpToO7M11Y7_4LMhFtSj=s1360-w1360-h1020-rw" title ="ประตูรั้วคฤหาสน์หรู" class="scale_image" alt="ยกระดับคฤหาสน์หรู สู่ที่สุดแห่งเอกลักษณ์ ด้วยประตูและงานโลหะสั่งทำระดับพรีเมียม โดย Phatuchaiyo" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -302,7 +344,7 @@
 						<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./generative-ai-for-secretary.html">
-											<img src="https://www.bangkokbangkok.net/เลขานุการAI.jpg" title ="Gen AI for secretary" class="scale_image">
+											<img src="https://www.bangkokbangkok.net/เลขานุการAI.jpg" title ="Gen AI for secretary" class="scale_image" alt="ปัญญาประดิษฐ์เชิงสร้างสรรค์สำหรับงานเลขานุการ Generative AI for Secretary" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -318,7 +360,7 @@
 						<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./csr.html">
-											<img src="https://www.bangkokbangkok.net/%E0%B8%81%E0%B8%B4%E0%B8%88%E0%B8%81%E0%B8%A3%E0%B8%A3%E0%B8%A1-CSR-%E0%B8%A1%E0%B8%B5%E0%B8%AD%E0%B8%B0%E0%B9%84%E0%B8%A3%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%87-.jpg" alt="กิจกรรม CSR มีอะไรบ้าง" title ="กิจกรรม CSR มีอะไรบ้าง" class="scale_image">
+											<img src="https://www.bangkokbangkok.net/%E0%B8%81%E0%B8%B4%E0%B8%88%E0%B8%81%E0%B8%A3%E0%B8%A3%E0%B8%A1-CSR-%E0%B8%A1%E0%B8%B5%E0%B8%AD%E0%B8%B0%E0%B9%84%E0%B8%A3%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%87-.jpg" alt="กิจกรรม CSR มีอะไรบ้าง" title ="กิจกรรม CSR มีอะไรบ้าง" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -333,7 +375,7 @@
 						<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./ลักษณะที่สำคัญที่สุดของร้านค้าปลีก.html">
-											<img src="https://bangkokbangkok.net/ลักษณะ-ที่-สำคัญ-ที่สุด-ของ-ร้าน-ค้า-ปลีก-คือ-อะไร.png" alt="ลักษณะที่สำคัญที่สุดของร้านค้าปลีก" title ="ลักษณะที่สำคัญที่สุดของร้านค้าปลีก" class="scale_image">
+											<img src="https://bangkokbangkok.net/ลักษณะ-ที่-สำคัญ-ที่สุด-ของ-ร้าน-ค้า-ปลีก-คือ-อะไร.png" alt="ลักษณะที่สำคัญที่สุดของร้านค้าปลีก" title ="ลักษณะที่สำคัญที่สุดของร้านค้าปลีก" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -347,7 +389,7 @@
 						<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./หนังสือการตลาด-แนะนำ.html">
-											<img src="https://bangkokbangkok.net/หนังสือการตลาด แนะนำ.jpg" alt="หนังสือการตลาด แนะนำ" title ="หนังสือการตลาด แนะนำ" class="scale_image">
+											<img src="https://bangkokbangkok.net/หนังสือการตลาด แนะนำ.jpg" alt="หนังสือการตลาด แนะนำ" title ="หนังสือการตลาด แนะนำ" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -362,7 +404,7 @@
 						<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./data-analytics.html">
-											<img src="https://bangkokbangkok.net/basic%20data%20analytics%20for%20modern%20trading%20business.jpg" alt="Data Analytics ขั้นพื้นฐานเพื่อการค้ายุคใหม่" title ="Data Analytics ขั้นพื้นฐานเพื่อการค้ายุคใหม่" class="scale_image">
+											<img src="https://bangkokbangkok.net/basic%20data%20analytics%20for%20modern%20trading%20business.jpg" alt="Data Analytics ขั้นพื้นฐานเพื่อการค้ายุคใหม่" title ="Data Analytics ขั้นพื้นฐานเพื่อการค้ายุคใหม่" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -376,7 +418,7 @@
 						<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./วิทยากรสอนTikTok.html">
-											<img src="https://www.bangkokbangkok.net/วิทยากรสอนติ๊กตอก.jpg" alt="วิทยากรสอน TikTok" title ="วิทยากรสอน TikTok" class="scale_image">
+											<img src="https://www.bangkokbangkok.net/วิทยากรสอนติ๊กตอก.jpg" alt="วิทยากรสอน TikTok" title ="วิทยากรสอน TikTok" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -390,7 +432,7 @@
 						<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./chatgptภาษาไทย.html">
-											<img src="https://www.bangkokbangkok.net/เฮียตง Chat gpt ไทย.jpg" alt="chat gpt ภาษาไทย" title ="chat gpt ภาษาไทย" class="scale_image">
+											<img src="https://www.bangkokbangkok.net/เฮียตง Chat gpt ไทย.jpg" alt="chat gpt ภาษาไทย" title ="chat gpt ภาษาไทย" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -404,7 +446,7 @@
 						<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./อาชีพหลังเกษียณ.html">
-											<img src="https://www.bangkokbangkok.net/อาชีพ หลัง เกษียณ.png" alt="อาชีพหลังเกษียณ" title ="อาชีพหลังเกษียณ" class="scale_image">
+											<img src="https://www.bangkokbangkok.net/อาชีพ หลัง เกษียณ.png" alt="อาชีพหลังเกษียณ" title ="อาชีพหลังเกษียณ" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -418,7 +460,7 @@
 			<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./CapCut%20วิธีใช้.html">
-											<img src="https://www.bangkokbangkok.net/CapCut วิธีใช้ ในการตลาดอสังหา ด้วย วิดีโอคอนเทนต์.jpg" alt="CapCut วิธีใช้" title ="CapCut วิธีใช้" class="scale_image">
+											<img src="https://www.bangkokbangkok.net/CapCut วิธีใช้ ในการตลาดอสังหา ด้วย วิดีโอคอนเทนต์.jpg" alt="CapCut วิธีใช้" title ="CapCut วิธีใช้" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -432,7 +474,7 @@
 								<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./หนังสือการตลาด.html">
-											<img src="https://www.bangkokbangkok.net/Positioning.jpg" alt="หนังสือการตลาด" title ="หนังสือการตลาด" class="scale_image">
+											<img src="https://www.bangkokbangkok.net/Positioning.jpg" alt="หนังสือการตลาด" title ="หนังสือการตลาด" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -447,7 +489,7 @@
 								<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./ตัวแทนจำหน่ายรถยนต์.html">
-											<img src="https://www.bangkokbangkok.net/ตัวแทนจำหน่ายรถยนต์-Mercedes-Benz.jpg" alt="ตัวแทนจำหน่ายรถยนต์" title ="ตัวแทนจำหน่ายรถยนต์" class="scale_image">
+											<img src="https://www.bangkokbangkok.net/ตัวแทนจำหน่ายรถยนต์-Mercedes-Benz.jpg" alt="ตัวแทนจำหน่ายรถยนต์" title ="ตัวแทนจำหน่ายรถยนต์" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -464,7 +506,7 @@
 					<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./วิทยากรชื่อดัง.html">
-											<img src="https://local.businesstoday.co/media/65794978496a6f314c434979496a6f7a4e7a45324f5377694d7949364d5377694e5349364d5449344d4377694e6949364e7a497766513d3d.jpg" alt="วิทยากรชื่อดัง" title ="วิทยากรชื่อดัง" class="scale_image">
+											<img src="https://local.businesstoday.co/media/65794978496a6f314c434979496a6f7a4e7a45324f5377694d7949364d5377694e5349364d5449344d4377694e6949364e7a497766513d3d.jpg" alt="วิทยากรชื่อดัง" title ="วิทยากรชื่อดัง" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -478,7 +520,7 @@
 					<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./AI-Marketing.html">
-											<img src="https://bangkokbangkok.net/AI Marketing การออกแบบ และ วางกลุยทธ์ การตลาด .jpg" alt="AI Marketing" title ="AI Marketing" class="scale_image">
+											<img src="https://bangkokbangkok.net/AI Marketing การออกแบบ และ วางกลุยทธ์ การตลาด .jpg" alt="AI Marketing" title ="AI Marketing" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -493,7 +535,7 @@
 					<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./starfish.html">
-											<img src="https://bangkokbangkok.net/starfish%20%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%B2%E0%B8%A7%20%E0%B8%97%E0%B8%B0%E0%B9%80%E0%B8%A5.jpg" alt="starfish ปลาดาว ทะเล" title ="starfish ปลาดาว ทะเล" class="scale_image">
+											<img src="https://bangkokbangkok.net/starfish%20%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%B2%E0%B8%A7%20%E0%B8%97%E0%B8%B0%E0%B9%80%E0%B8%A5.jpg" alt="starfish ปลาดาว ทะเล" title ="starfish ปลาดาว ทะเล" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -508,7 +550,7 @@
 		<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./enfybag.html">
-											<img src="https://local.businesstoday.co/media/65794978496a6f314c434979496a6f7a4e4467794e6977694d7949364d5377694e5349364d5449344d4377694e6949364e7a497766513d3d.jpg" alt="กระเป๋าแฟชั่นหนังแท้" title ="กระเป๋าแฟชั่นหนังแท้" class="scale_image">
+											<img src="https://local.businesstoday.co/media/65794978496a6f314c434979496a6f7a4e4467794e6977694d7949364d5377694e5349364d5449344d4377694e6949364e7a497766513d3d.jpg" alt="กระเป๋าแฟชั่นหนังแท้" title ="กระเป๋าแฟชั่นหนังแท้" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -523,7 +565,7 @@
 		<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./retirement_course.html">
-											<img src="https://www.bangkokbangkok.net/เกษียณอายุ.jpg" alt="เกษียณอายุ" title ="เกษียณอายุ" class="scale_image">
+											<img src="https://www.bangkokbangkok.net/เกษียณอายุ.jpg" alt="เกษียณอายุ" title ="เกษียณอายุ" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -538,13 +580,13 @@
 		<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./คอร์สรักษาสิว.html">
-											<img src="https://www.bangkokbangkok.net/%E0%B8%84%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%AA%20%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%B2%20%E0%B8%AA%E0%B8%B4%E0%B8%A7.jpg" alt="คอร์สรักษาสิว" title ="คอร์สรักษาสิว" class="scale_image">
+											<img src="https://www.bangkokbangkok.net/%E0%B8%84%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%AA%20%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%B2%20%E0%B8%AA%E0%B8%B4%E0%B8%A7.jpg" alt="คอร์สรักษาสิว" title ="คอร์สรักษาสิว" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
 
                       <div class="post_text">
-			      <h3 class="post_title"><a href="./คอร์สรักษาสิว.html">คอร์สรักษาสิว เลือกที่ราคาถูก อย่างเดียว ระวังเสียใจ [วิธีเลือกคอร์สรักษาสิวที่คุ้มค่า]</h3>
+			      <h3 class="post_title"><a href="./คอร์สรักษาสิว.html">คอร์สรักษาสิว เลือกที่ราคาถูก อย่างเดียว ระวังเสียใจ [วิธีเลือกคอร์สรักษาสิวที่คุ้มค่า]</a></h3>
 				<p>หลายคนที่กำลังเป็นสิว หรือ สิวกำลังเห่อ (แบบแทบจะไม่มีผิวหน้าเนียนเหลือ) ลองมาหลายวิธีแล้ว รักษาด้วยตัวเอง ใช้ครีม ใช้ยา และ วิธีอื่นๆอีกมากมาย เพื่อจะทำให้ สิวหาย แต่ก็ยังไม่หายสักที สุดท้ายตัดสินใจเลือกที่จะเข้าคลินิก ดังนั้น สิ่งหนึ่งที่หลายคนตัดสินใจเข้ารักษาสิวที่คลีนิค สิ่งต้องคิดถึงก่อนเป็นอย่างแรกส่วนใหญ่ คือเข้าไปแล้ว คอร์สรักษาสิว ของคลินิกที่เลือกนี้จะดีหรือไม่ดี...</p>
                       </div>
                     </div>
@@ -553,13 +595,13 @@
 		<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./kanwara-clinic.html">
-											<img src="https://i.ytimg.com/vi/QTolCh7qhFA/maxresdefault.jpg" alt="หมอรักษาสิว" title ="หมอรักษาสิว" class="scale_image">
+											<img src="https://i.ytimg.com/vi/QTolCh7qhFA/maxresdefault.jpg" alt="หมอรักษาสิว" title ="หมอรักษาสิว" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
 
                       <div class="post_text">
-			      <h3 class="post_title"><a href="./kanwara-clinic.html">หมอรักษาสิว ขวัญใจ มวลชน เยาวรุ่น แพทย์หญิง กัญวรา นวอนุรักษ์ กัญวราคลินิก</h3>
+			      <h3 class="post_title"><a href="./kanwara-clinic.html">หมอรักษาสิว ขวัญใจ มวลชน เยาวรุ่น แพทย์หญิง กัญวรา นวอนุรักษ์ กัญวราคลินิก</a></h3>
 				<p>หมอรักษาสิว ที่ไหนดี ถ้านี่ยังเป็นคำถามของคุณอยู่ แสดงว่าคุณน่าจะยังไม่รู้จัก คุณหมอคนดังที่ นาทีนี้ เยาวรุ่นบอกกันปากต่อปากว่า ถ้าเป็นสิวแล้วยากหายขาด ต้องคนนี้เลย วันนี้เราจึงได้พา คุณหมอเหมี่ยว กัญวรา นวอนุรักษ์ แพทย์เจ้าของคลินิกรักษาสิวยอดนิยม กัญวราคลินิก มาให้ได้รู้จักกัน กับบทสัมภาษณ์ ความเป็นมาของอาชีพ และ ความตั้งใจในการ เปิดคลินิกความงาม จนทำให้เป็นกระแสบอกต่อกันอยู่ในตอนนี้...</p>
                       </div>
                     </div>
@@ -569,13 +611,13 @@
 		<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./digital-marketing-consultant.html">
-											<img src="ที่ปรึกษาการตลาดออนไลน์ อาจารย์แชมป์ ธิติพล เทียมจันทร์.jpg" alt="ที่ปรึกษาการตลาดออนไลน์" title ="ที่ปรึกษาการตลาดออนไลน์" class="scale_image">
+											<img src="ที่ปรึกษาการตลาดออนไลน์ อาจารย์แชมป์ ธิติพล เทียมจันทร์.jpg" alt="ที่ปรึกษาการตลาดออนไลน์" title ="ที่ปรึกษาการตลาดออนไลน์" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
 
                       <div class="post_text">
-			      <h3 class="post_title"><a href="./digital-marketing-consultant.html">ที่ปรึกษาการตลาดออนไลน์ บริการ นี้ “ จ้าง ” แล้วได้อะไร ?</h3>
+			      <h3 class="post_title"><a href="./digital-marketing-consultant.html">ที่ปรึกษาการตลาดออนไลน์ บริการ นี้ “ จ้าง ” แล้วได้อะไร ?</a></h3>
 				<p>ในปีที่ผ่านมา คนไทยมีอัตราเฉลี่ยการใช้งานอินเทอร์เน็ตมากกว่าวันละ 10 นาที ข้อมูลจากสำนักงานพัฒนาธุรกรรมทางอิเล็กทรอนิกส์ นี่คือ จำนวนที่ค่อนข้างมากเกือบจะเป็น อันดับ 1 ของโลกได้เลย
 
 ในขณะที่เราไม่ได้ใช้โทรศัพท์มือถือ เราก็จะเข้าเว็บด้วยการใช้ notebook หรือ laptop ในการต่อเข้าสู่อินเทอร์เน็ตอยู่ดี ไม่ว่าจะเป็นกิจกรรมที่เกี่ยวกับการทำงาน หรือแม้กระทั่ง...</p>
@@ -586,13 +628,13 @@
 		<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./social-media-marketing.html">
-											<img src="https://www.brandingchamp.com/wp-content/uploads/2020/11/social-media-marketing.jpg" alt="social media marketing คือ" title ="social media marketing คือ" class="scale_image">
+											<img src="https://www.brandingchamp.com/wp-content/uploads/2020/11/social-media-marketing.jpg" alt="social media marketing คือ" title ="social media marketing คือ" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
 
                       <div class="post_text">
-			      <h3 class="post_title"><a href="./social-media-marketing.html">social media marketing คืออะไร มีอะไรบ้าง [อัพเดทล่าสุด] วิทยากร ในงาน AIS D.C.</h3>
+			      <h3 class="post_title"><a href="./social-media-marketing.html">social media marketing คืออะไร มีอะไรบ้าง [อัพเดทล่าสุด] วิทยากร ในงาน AIS D.C.</a></h3>
 				<p>social media marketing คืออะไร นี่อาจเป็นคำถามที่คงไม่ต้องการคำตอบแล้วในยุคที่ทุกคนมีแอพพลิเคชั่นอยู่ในมือถือเป็น facebook Twitter Instagram YouTube LINE tiktok และอื่นๆอีกมากมาย จนทุกวันนี้มีการใช้งาน Social Media อยู่อย่างหนาแน่นและมีการใช้งานในชีวิตประจำวันอยู่ในทุกช่วงเวลา นับตั้งแต่...</p>
                       </div>
                     </div>
@@ -602,13 +644,13 @@
 		<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./business-model-2020.html">
-											<img src="https://www.brandingchamp.com/wp-content/uploads/2020/03/วิทยากร-อบรม-โมเดลธุรกิจ.jpg" alt="โมเดลธุรกิจ" title ="โมเดลธุรกิจ" class="scale_image">
+											<img src="https://www.brandingchamp.com/wp-content/uploads/2020/03/วิทยากร-อบรม-โมเดลธุรกิจ.jpg" alt="โมเดลธุรกิจ" title ="โมเดลธุรกิจ" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
 
                       <div class="post_text">
-			      <h3 class="post_title"><a href="./business-model-2020.html">โมเดลธุรกิจ (สัมมนา ธุรกิจ จำลอง) อบรมแนวทางการเป็น ผู้ประกอบการใหม่ 2563</h3>
+			      <h3 class="post_title"><a href="./business-model-2020.html">โมเดลธุรกิจ (สัมมนา ธุรกิจ จำลอง) อบรมแนวทางการเป็น ผู้ประกอบการใหม่ 2563</a></h3>
 				<p>โมเดลธุรกิจ โครงการ อบรม ผู้ประกอบการใหม่ 2563 (สัมมนา ธุรกิจจำลอง) กลุ่มสาขาวิชาบริหารธุรกิจ นิเทศศาสตร์ และ คณะวิทยาการจัดการ มหาวิทยาลัยราชภัฎสวนสุนันทา...</p>
                       </div>
                     </div>
@@ -617,13 +659,13 @@
 		<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./product-development.html">
-											<img src="https://www.brandingchamp.com/wp-content/uploads/2020/03/%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%A3-%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3%E0%B8%9E%E0%B8%B1%E0%B8%92%E0%B8%99%E0%B8%B2%E0%B8%9C%E0%B8%A5%E0%B8%B4%E0%B8%95%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C.jpg" alt="การพัฒนาผลิตภัณฑ์" title ="การพัฒนาผลิตภัณฑ์" class="scale_image">
+											<img src="https://www.brandingchamp.com/wp-content/uploads/2020/03/%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%A3-%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3%E0%B8%9E%E0%B8%B1%E0%B8%92%E0%B8%99%E0%B8%B2%E0%B8%9C%E0%B8%A5%E0%B8%B4%E0%B8%95%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C.jpg" alt="การพัฒนาผลิตภัณฑ์" title ="การพัฒนาผลิตภัณฑ์" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
 
                       <div class="post_text">
-			      <h3 class="post_title"><a href="./product-development.html">การพัฒนาผลิตภัณฑ์ ( Product Development ) ยุคใหม่ ต้องเรียนรู้อะไรบ้าง ??</h3>
+			      <h3 class="post_title"><a href="./product-development.html">การพัฒนาผลิตภัณฑ์ ( Product Development ) ยุคใหม่ ต้องเรียนรู้อะไรบ้าง ??</a></h3>
 				<p>การพัฒนาผลิตภัณฑ์ ( Product Development ) เป็นกระบวนการจำเป็นอย่างยิ่งที่ผู้ประกอบการต้องเรียนรู้ เนื้อหาบางส่วนในบทความนี้สรุปจากการบรรยายโดย วิทยากร อาจารย์แชมป์ ธิติพล เทียมจันทร์ ในโครงการ อบรมเชิงปฏิบัติการ...</p>
                       </div>
                     </div>
@@ -632,13 +674,13 @@
 		<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./cpall.html">
-											<img src="https://www.brandingchamp.com/wp-content/uploads/2020/02/cpall-%E0%B8%8B%E0%B8%B5%E0%B8%9E%E0%B8%B5%E0%B8%AD%E0%B8%AD%E0%B8%A5-%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%AA%E0%B8%B2%E0%B8%A3-769x576.jpg" alt="cpall" title ="cpall" class="scale_image">
+											<img src="https://www.brandingchamp.com/wp-content/uploads/2020/02/cpall-%E0%B8%8B%E0%B8%B5%E0%B8%9E%E0%B8%B5%E0%B8%AD%E0%B8%AD%E0%B8%A5-%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%AA%E0%B8%B2%E0%B8%A3-769x576.jpg" alt="cpall" title ="cpall" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
 
                       <div class="post_text">
-			      <h3 class="post_title"><a href="./cpall.html">cpall และ สถาบันการจัดการปัญญาภิวัฒน์ กับ สัมมนาเข้มข้น โดย วิทยากรด้านการสื่อสาร ชื่อดัง</h3>
+			      <h3 class="post_title"><a href="./cpall.html">cpall และ สถาบันการจัดการปัญญาภิวัฒน์ กับ สัมมนาเข้มข้น โดย วิทยากรด้านการสื่อสาร ชื่อดัง</a></h3>
 				<p>cpall และ สถาบันการจัดการปัญญาภิวัฒน์ ร่วมมือจัดสัมมนาเข้มข้น ต้อนรับการเข้าสู่ศตวรรษที่ 21 กันอย่างเต็มตัวกับเนื้อหาหลักสูตรที่เป็นที่สนใจกับประชาชนทั่วไป และได้รับความนิยมสูงสุด หัวข้อ คือ กลยุทธ์การสื่อสารยุคดิจิทัลและการปรับตัว ปี 2020 ( Digital Communication Trends and PR Direction 2020 )...</p>
                       </div>
                     </div>
@@ -647,13 +689,13 @@
 		<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./innovation-ck.html">
-											<img src="https://www.brandingchamp.com/wp-content/uploads/2020/02/%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B8%E0%B8%A1%E0%B8%8A%E0%B8%99-%E0%B8%8A.%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87-1024x471.jpg" alt="ช่างชุมชน" title ="ช่างชุมชน" class="scale_image">
+											<img src="https://www.brandingchamp.com/wp-content/uploads/2020/02/%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B8%E0%B8%A1%E0%B8%8A%E0%B8%99-%E0%B8%8A.%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87-1024x471.jpg" alt="ช่างชุมชน" title ="ช่างชุมชน" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
 
                       <div class="post_text">
-			      <h3 class="post_title"><a href="./innovation-ck.html">นวัตกรรมใหม่ ช่างชุมชน กับ การตลาดออนไลน์ (โดย ช.การช่าง และ NIA)</h3>
+			      <h3 class="post_title"><a href="./innovation-ck.html">นวัตกรรมใหม่ ช่างชุมชน กับ การตลาดออนไลน์ (โดย ช.การช่าง และ NIA)</a></h3>
 				<p>นวัตกรรมใหม่ของช่างชุมชน ใน โครงการที่เป็นความร่วมมือกันของ บริษัท ช.การช่าง จำกัด (มหาชน) และ สำนักงานนวัตกรรมแห่งชาติ (องค์การมหาชน) เพื่อยกระดับทักษะ ช่างชุมชน ผ่าน นวัตกรรมใหม่ ในโครงการประกวดสิ่งประดิษฐ์ที่มุ่งเน้นแก้ไขปัญหาชุมชนท้องถิ่น โดยมีการฝึกอบรมในด้าน การตลาดออนไลน์ ด้วย วิทยากรผู้เชี่ยวชาญ อาจารย์แชมป์ ธิติพล เทียมจันทร์...</p>
                       </div>
                     </div>
@@ -662,13 +704,13 @@
 		<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./digital-communication-2020.html">
-											<img src="การสื่อสารยุคดิจิทัล.png" alt="การสื่อสารยุคดิจิทัล" title ="การสื่อสารยุคดิจิทัล" class="scale_image">
+											<img src="การสื่อสารยุคดิจิทัล.png" alt="การสื่อสารยุคดิจิทัล" title ="การสื่อสารยุคดิจิทัล" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
 
                       <div class="post_text">
-			      <h3 class="post_title"><a href="./digital-communication-2020.html">กลยุทธ์การสื่อสารยุคดิจิทัลและการปรับตัว ปี 2020 Digital Communication Trends and PR Direction</h3>
+			      <h3 class="post_title"><a href="./digital-communication-2020.html">กลยุทธ์การสื่อสารยุคดิจิทัลและการปรับตัว ปี 2020 Digital Communication Trends and PR Direction</a></h3>
 				<p>กลยุทธ์การสื่อสารยุคดิจิทัล ปี 2020 ในยุคของการสื่อสารที่เทคโนโลยีเข้ามามีบทบาทและทำหน้าที่ได้อย่างไร้ขีดจำกัด สื่อต่างๆ ถูกส่งผ่านจากคนหนึ่งสู่อีกคนโดยใช้เวลาไม่ถึงนาที จึงทำให้ในปีที่ผ่านมาไม่มีใครไม่รู้จักคำว่า Digital
 ภายใต้การบริหารงาน...</p>
                       </div>
@@ -678,13 +720,13 @@
 		<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./online-marketing-lecturer.html">
-											<img src="วิทยากร-การตลาดออนไลน์.jpg" alt="วิทยากรการตลาดออนไลน์" title ="วิทยากรการตลาดออนไลน์" class="scale_image">
+											<img src="วิทยากร-การตลาดออนไลน์.jpg" alt="วิทยากรการตลาดออนไลน์" title ="วิทยากรการตลาดออนไลน์" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
 
                       <div class="post_text">
-			      <h3 class="post_title"><a href="./online-marketing-lecturer.html">วิทยากรการตลาดออนไลน์ กับเกือบ [800 ชั่วโมง] ของ หลักสูตร สัมมนา และ อบรม ปีที่ ผ่านมา</h3>
+			      <h3 class="post_title"><a href="./online-marketing-lecturer.html">วิทยากรการตลาดออนไลน์ กับเกือบ [800 ชั่วโมง] ของ หลักสูตร สัมมนา และ อบรม ปีที่ ผ่านมา</a></h3>
 				<p>วิทยากรการตลาดออนไลน์ อาจารย์แชมป์ ธิติพล เทียมจันทร์ ผู้เชี่ยวชาญด้านการตลาดดิจิทัล และ ที่ปรึกษาการตลาดออนไลน์ อันดับ 1 ได้ เล่าถึงประสบการณ์ในการเป็น วิทยากรเกี่ยวกับการตลาดออนไลน์ ดิจิตอลมาร์เก็ตติ้ง และ เรื่องราวที่เกี่ยวกับการขายของออนไลน์ รวมถึง ธุรกิจ อีคอมเมิร์ซ ต่างๆที่ เข้ามา สร้างรายได้ ขยายธุรกิจ กันในโลกออนไลน์ จากการเป็น วิทยากรด้านการตลาดออนไลน์ ที่มีความต้องการตัวสูงเป็นอันดับต้นๆของประเทศ...</p>
                       </div>
                     </div>
@@ -693,14 +735,14 @@
 		<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./content-marketing-lecturer.html">
-											<img src="https://www.brandingchamp.com/wp-content/uploads/2019/11/วิทยากร-เขียน-Content.jpg" alt="วิทยากร Content Marketing" title ="วิทยากร Content Marketing" class="scale_image">
+											<img src="https://www.brandingchamp.com/wp-content/uploads/2019/11/วิทยากร-เขียน-Content.jpg" alt="วิทยากร Content Marketing" title ="วิทยากร Content Marketing" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
 
                       <div class="post_text">
 			      <h3 class="post_title"><a href="./content-marketing-lecturer.html">วิทยากร Content Marketing แชร์ผ่านบทสัมภาษณ์ เรื่อง เทรนด์ การตลาดด้วยคอนเทนต์
-</h3>
+</a></h3>
 				<p>วิทยากร Content Marketing อาจารย์แชมป์ ธิติพล เทียมจันทร์ เจ้าของเว็บบล็อกเกี่ยวกับการตลาดและการตลาดออนไลน์ BrandingChamp.com ที่มียอดผู้เข้าชมต่อเดือน มากกว่า 10,000 คน และมีบทความอื่นๆที่ได้รับความนิยมและถูกแชร์ออกไปในโลกออนไลน์อีกมากมาย...</p>
                       </div>
                     </div>
@@ -709,14 +751,14 @@
 		<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./retirement-plan-course-lecturer.html">
-											<img src="https://www.brandingchamp.com/wp-content/uploads/2019/10/วิทยากร-อาชีพหลังเกษียณ.jpg" alt="วิทยากรอาชีพหลังเกษียณ" class="scale_image">
+											<img src="https://www.brandingchamp.com/wp-content/uploads/2019/10/วิทยากร-อาชีพหลังเกษียณ.jpg" alt="วิทยากรอาชีพหลังเกษียณ" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
 
                       <div class="post_text">
 			      <h3 class="post_title"><a href="./retirement-plan-course-lecturer.html">อาชีพหลังเกษียณ โครงการ,หลักสูตร ที่ไทยต้อง เตรียมตัว สู่ สังคมสูงวัย โดยวิทยากรชื่อดัง
-</h3>
+</a></h3>
 				<p>อาชีพหลังเกษียณ หากใครได้ติดตามข่าวของประเทศญี่ปุ่นที่มีการขึ้นภาษีอุปโภคบริโภคหรือที่บ้านเราเรียกว่า vat ภาษีมูลค่าเพิ่มเป็น 10%
 ล่าสุดทางการญี่ปุ่นได้ออกมาตรการเพิ่มภาษีมูลค่าเพิ่ม ขึ้นเป็น 10% เนื่องมาจากเป็นการช่วยเหลือและนำเงินภาษีส่วนที่เพิ่มขึ้นดังกล่าวเข้ามาช่วย...</p>
                       </div>
@@ -726,13 +768,13 @@
 		<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./thailand-business-shutdown.html">
-											<img src="https://image.freepik.com/free-photo/beautiful-asian-woman-thinking-office_23-2148327035.jpg" alt="ธุรกิจปีนี้" class="scale_image">
+											<img src="https://image.freepik.com/free-photo/beautiful-asian-woman-thinking-office_23-2148327035.jpg" alt="ธุรกิจปีนี้" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
 
                       <div class="post_text">
-			      <h3 class="post_title"><a href="./thailand-business-shutdown.html">ธุรกิจ ปีนี้ ปิดตัวไปแล้วมากกว่าครึ่ง (ข้อมูลล่าสุด)</h3>
+			      <h3 class="post_title"><a href="./thailand-business-shutdown.html">ธุรกิจ ปีนี้ ปิดตัวไปแล้วมากกว่าครึ่ง (ข้อมูลล่าสุด)</a></h3>
 				<p>ธุรกิจ ปีนี้ ปิดตัวไปแล้วมากกว่าครึ่ง กรมพัฒนาธุรกิจการค้า เปิดเผยการจดทะเบียนธุรกิจของกรมพัฒนาธุรกิจการค้าประจำเดือนกันยายน 2562 และไตรมาส 3/2562 พบว่า...</p>
                       </div>
                     </div>
@@ -742,13 +784,13 @@
 		<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./war-of-retail-chiangmai.html">
-											<img src="./files/วิทยากรการจัดการธุรกิจค้าปลีกสมัยใหม่.jpg" alt="วิทยากรการจัดการธุรกิจค้าปลีกสมัยใหม่" class="scale_image">
+											<img src="./files/วิทยากรการจัดการธุรกิจค้าปลีกสมัยใหม่.jpg" alt="วิทยากรการจัดการธุรกิจค้าปลีกสมัยใหม่" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
 
                       <div class="post_text">
-			      <h3 class="post_title"><a href="./war-of-retail-chiangmai.html">ประชาสัมพันธ์งาน โครงการสัมมนาค้าปลีก WAR OF RETAIL รู้ รับ ปรับ รุก สู่ยุค 2020</h3>
+			      <h3 class="post_title"><a href="./war-of-retail-chiangmai.html">ประชาสัมพันธ์งาน โครงการสัมมนาค้าปลีก WAR OF RETAIL รู้ รับ ปรับ รุก สู่ยุค 2020</a></h3>
 				<p>เนื่องด้วย วิชาเอกการจัดการธุรกิจค้าปลีกสมัยใหม่ คณะบริหารธุรกิจและศิลปศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคล ล้านนา เชียงใหม่ ได้กำหนดการจัดโครงการ สัมมนา ค้าปลีก ภายใต้หัวข้อเรื่อง war of retail รู้ รับ ปรับ รุก สู่ยุค 2020 เพื่อส่งเสริมและพัฒนาทักษะด้าน การบริหารจัดการธุรกิจค้าปลีกในยุค 2020...</p>
                       </div>
                     </div>
@@ -757,7 +799,7 @@
 		<li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./digital-business-and-marketing-lecturer.html">
-											<img src="./files/วิทยากร ธุรกิจ ออนไลน์.jpg" alt="" class="scale_image">
+											<img src="./files/วิทยากร ธุรกิจ ออนไลน์.jpg" alt="วิทยากรธุรกิจออนไลน์ อบรมพัฒนาศักยภาพผู้เรียนอาชีวศึกษาในการเป็นผู้ประกอบการแบบเข้มข้น" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -772,7 +814,7 @@
 				                    <li class="clearfix">
                     <div class="scale_image_container">
 					                        <a href="./ict-to-digital.html">
-											<img src="./files/เทคโนโลยีสารสนเทศและการสื่อสาร-ที่ปรึกษาการตลาดออนไลน์.jpg" alt="" class="scale_image">
+											<img src="./files/เทคโนโลยีสารสนเทศและการสื่อสาร-ที่ปรึกษาการตลาดออนไลน์.jpg" alt="เทคโนโลยีสารสนเทศและการสื่อสาร หายไปไหนทำไมเหลือแต่ &quot;ดิจิทัล&quot; ( กระทรวงดิจิตอล )" class="scale_image" width="640" height="400" decoding="async" loading="lazy">
 											</a>
 					                      </div>
                     <div class="wrapper">
@@ -788,7 +830,7 @@
 				  
 				                    <li class="clearfix">
                     <div class="scale_image_container">
-					                        <a href="Hyundai.html"><img src="https://image.cnbcfm.com/api/v1/image/106059788-1565004748120pressphoto3.jpg" alt="" class="scale_image"></a>
+					                        <a href="Hyundai.html"><img src="https://image.cnbcfm.com/api/v1/image/106059788-1565004748120pressphoto3.jpg" alt="ฮุนได เปิดตัวรถใหม่ ใช้หลังคาเก็บ พลังงานแสงอาทิตย์" class="scale_image" width="640" height="400" decoding="async" loading="lazy"></a>
 					                      </div>
                     <div class="wrapper">
 
@@ -803,7 +845,7 @@
 				  
 				                    <li class="clearfix">
                     <div class="scale_image_container">
-					                        <a href="digital.html"><img src="https://image.freepik.com/free-photo/pay-goods-by-credit-card-through-smartphone-coffee-shop_1150-18769.jpg" alt="" class="scale_image"></a>
+					                        <a href="digital.html"><img src="https://image.freepik.com/free-photo/pay-goods-by-credit-card-through-smartphone-coffee-shop_1150-18769.jpg" alt="ยุคดิจิทัล ใครจะเป็นจ้าวตลาด รายต่อไป??" class="scale_image" width="640" height="400" decoding="async" loading="lazy"></a>
 					                      </div>
                     <div class="wrapper">
 
@@ -818,7 +860,7 @@
 				  
 				                    <!--li class="clearfix">
                     <div class="scale_image_container">
-					                        <a href="https://www.bangkokbiznews.com/news/detail/842143"><img src="./files/555x312_842143_1564440346.jpg" alt="" class="scale_image"></a>
+					                        <a href="https://www.bangkokbiznews.com/news/detail/842143"><img src="./files/555x312_842143_1564440346.jpg" alt="ภาพประกอบบทความ" class="scale_image" width="640" height="400" decoding="async" loading="lazy"></a>
 					                      </div>
                     <div class="wrapper">
 
@@ -833,7 +875,7 @@
 				  
 				                    <!--li class="clearfix">
                     <div class="scale_image_container">
-					                        <a href="https://www.bangkokbiznews.com/news/detail/842142"><img src="./files/555x312_842142_1564440137.jpg" alt="" class="scale_image"></a>
+					                        <a href="https://www.bangkokbiznews.com/news/detail/842142"><img src="./files/555x312_842142_1564440137.jpg" alt="ภาพประกอบบทความ" class="scale_image" width="640" height="400" decoding="async" loading="lazy"></a>
 					                      </div>
                     <div class="wrapper">
                       <div class="post_text">
@@ -847,7 +889,7 @@
 				  
 				                    <!--li class="clearfix">
                     <div class="scale_image_container">
-					                        <a href="https://www.bangkokbiznews.com/news/detail/842141"><img src="./files/555x312_842141_1564439928.jpg" alt="" class="scale_image"></a>
+					                        <a href="https://www.bangkokbiznews.com/news/detail/842141"><img src="./files/555x312_842141_1564439928.jpg" alt="ภาพประกอบบทความ" class="scale_image" width="640" height="400" decoding="async" loading="lazy"></a>
 					                      </div>
                     <div class="wrapper">
                       <div class="post_text">
@@ -858,19 +900,15 @@
                   </li-->
 
 				  				  <!-- FreakOut -->
-				  <div style="display:none"></div>
+				  <!-- Reserved for optional advertising; no non-list child in article list -->
 				  <!-- FreakOut -->				  
 				  
 				  				  <!--Ad -->
-                  <li class="clearfix">
-                    <div class="section t_align_c">
-
-                    </div>
-                  </li>
+                  <!-- Advertising slot intentionally empty -->
 				  
 				                    <li class="clearfix">
                     <div class="scale_image_container">
-					                        <a href="great-leader-6-characters.html"><img src="https://image.freepik.com/free-photo/happy-professional_1098-12931.jpg" alt="ลักษณะ ผู้นำ" class="scale_image"></a>
+					                        <a href="great-leader-6-characters.html"><img src="https://image.freepik.com/free-photo/happy-professional_1098-12931.jpg" alt="ลักษณะ ผู้นำ" class="scale_image" width="640" height="400" decoding="async" loading="lazy"></a>
 					                      </div>
                     <div class="wrapper">
                       <div class="post_text">
@@ -884,7 +922,7 @@
 				  
 				                    <li class="clearfix">
                     <div class="scale_image_container">
-					                        <a href="grab-thailand.html"><img src="https://droidsans.com/wp-content/uploads/2019/06/grab-1.jpg" alt="" class="scale_image"></a>
+					                        <a href="grab-thailand.html"><img src="https://droidsans.com/wp-content/uploads/2019/06/grab-1.jpg" alt="Grab (แกร็บประเทศไทย) โดน เปย์ โดย กลุ่มเซ็นทรัล" class="scale_image" width="640" height="400" decoding="async" loading="lazy"></a>
 					                      </div>
                     <div class="wrapper">
                       <div class="post_text">
@@ -898,7 +936,7 @@
 				  
 				                    <!--li class="clearfix">
                     <div class="scale_image_container">
-					                        <a href="https://www.bangkokbiznews.com/news/detail/842132"><img src="./files/555x312_842132_1564403519.jpg" alt="" class="scale_image"></a>
+					                        <a href="https://www.bangkokbiznews.com/news/detail/842132"><img src="./files/555x312_842132_1564403519.jpg" alt="ภาพประกอบบทความ" class="scale_image" width="640" height="400" decoding="async" loading="lazy"></a>
 					                      </div>
                     <div class="wrapper">
                       <div class="post_text">
@@ -912,7 +950,7 @@
 				  
 				                    <!--li class="clearfix">
                     <div class="scale_image_container">
-					                        <a href="https://www.bangkokbiznews.com/news/detail/842128"><img src="./files/555x312_842128_1564401691.jpg" alt="" class="scale_image"></a>
+					                        <a href="https://www.bangkokbiznews.com/news/detail/842128"><img src="./files/555x312_842128_1564401691.jpg" alt="ภาพประกอบบทความ" class="scale_image" width="640" height="400" decoding="async" loading="lazy"></a>
 					                      </div>
                     <div class="wrapper">
                       <div class="post_text">
@@ -926,7 +964,7 @@
 				  
 				                    <!--li class="clearfix">
                     <div class="scale_image_container">
-					                        <a href="https://www.bangkokbiznews.com/news/detail/842124"><img src="./files/555x312_842124_1564398630.jpg" alt="" class="scale_image"></a>
+					                        <a href="https://www.bangkokbiznews.com/news/detail/842124"><img src="./files/555x312_842124_1564398630.jpg" alt="ภาพประกอบบทความ" class="scale_image" width="640" height="400" decoding="async" loading="lazy"></a>
 					                      </div>
                     <div class="wrapper">
                       <div class="post_text">
@@ -939,7 +977,7 @@
 				  
 				                    <!--li class="clearfix">
                     <div class="scale_image_container">
-					                        <a href="https://www.bangkokbiznews.com/news/detail/842122"><img src="./files/555x312_842122_1564396023.jpg" alt="" class="scale_image"></a>
+					                        <a href="https://www.bangkokbiznews.com/news/detail/842122"><img src="./files/555x312_842122_1564396023.jpg" alt="ภาพประกอบบทความ" class="scale_image" width="640" height="400" decoding="async" loading="lazy"></a>
 					                      </div>
                     <div class="wrapper">
                       <div class="post_text">
@@ -953,7 +991,7 @@
 				  
 				                    <!--li class="clearfix">
                     <div class="scale_image_container">
-					                        <a href="https://www.bangkokbiznews.com/news/detail/842120"><img src="./files/555x312_842120_1564392436.jpg" alt="" class="scale_image"></a>
+					                        <a href="https://www.bangkokbiznews.com/news/detail/842120"><img src="./files/555x312_842120_1564392436.jpg" alt="ภาพประกอบบทความ" class="scale_image" width="640" height="400" decoding="async" loading="lazy"></a>
 					                      </div>
                     <div class="wrapper">
                       <div class="post_text">
@@ -967,7 +1005,7 @@
 				  
 				                    <!--li class="clearfix">
                     <div class="scale_image_container">
-					                        <a href="https://www.bangkokbiznews.com/news/detail/842118"><img src="./files/555x312_842118_1564398974.jpg" alt="" class="scale_image"></a>
+					                        <a href="https://www.bangkokbiznews.com/news/detail/842118"><img src="./files/555x312_842118_1564398974.jpg" alt="ภาพประกอบบทความ" class="scale_image" width="640" height="400" decoding="async" loading="lazy"></a>
 					                      </div>
                     <div class="wrapper">
                       <div class="post_text">
@@ -993,7 +1031,7 @@
 			</ul>
 			</div>        
           </div> <!--end left col-->
-          <div class="col-lg-4 col-md-4 col-sm-12">
+          <aside class="col-lg-4 col-md-4 col-sm-12" aria-label="บทความแนะนำและข่าวยอดนิยม">
 
             <div class="section_6">
 			  <!-- special ad -->
@@ -1013,7 +1051,7 @@
 
 
 					  <div class="scale_image_container">
-		   <a href="กลยุทธ์การตลาดคลินิกความงาม.html"><img src="https://www.bangkokbangkok.net/%E0%B8%81%E0%B8%A5%E0%B8%A2%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B9%8C%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%95%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%84%E0%B8%A5%E0%B8%B4%E0%B8%99%E0%B8%B4%E0%B8%81%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%87%E0%B8%B2%E0%B8%A1%20%E0%B8%9B%E0%B8%B5%202026.jpeg" alt="กลยุทธ์การตลาดคลินิกความงาม" class="scale_image"></a>
+		   <a href="กลยุทธ์การตลาดคลินิกความงาม.html"><img src="https://www.bangkokbangkok.net/%E0%B8%81%E0%B8%A5%E0%B8%A2%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B9%8C%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%95%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%84%E0%B8%A5%E0%B8%B4%E0%B8%99%E0%B8%B4%E0%B8%81%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%87%E0%B8%B2%E0%B8%A1%20%E0%B8%9B%E0%B8%B5%202026.jpeg" alt="กลยุทธ์การตลาดคลินิกความงาม" class="scale_image" width="640" height="400" decoding="async" loading="lazy"></a>
 		   </div>
                     <div class="wrapper">
                       <div class="post_text">
@@ -1023,7 +1061,7 @@
                     </div>	<br/>	
 				
                     <div class="scale_image_container">
-					                        <a href="English-for-Commercial-Business-Course.html"><img src="https://bangkokbangkok.net/%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2%E0%B8%AD%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%A4%E0%B8%A9%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%88%E0%B8%B3%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99-%E0%B8%AA%E0%B8%B3%E0%B8%AB%E0%B8%A3%E0%B8%B1%E0%B8%9A-%E0%B8%98%E0%B8%B8%E0%B8%A3%E0%B8%81%E0%B8%B4%E0%B8%88%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%89%E0%B8%B2.jpg" alt="ภาษาอังกฤษที่จำเป็นสำหรับธุรกิจการค้า" class="scale_image"></a>
+					                        <a href="English-for-Commercial-Business-Course.html"><img src="https://bangkokbangkok.net/%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2%E0%B8%AD%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%A4%E0%B8%A9%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%88%E0%B8%B3%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99-%E0%B8%AA%E0%B8%B3%E0%B8%AB%E0%B8%A3%E0%B8%B1%E0%B8%9A-%E0%B8%98%E0%B8%B8%E0%B8%A3%E0%B8%81%E0%B8%B4%E0%B8%88%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%89%E0%B8%B2.jpg" alt="ภาษาอังกฤษที่จำเป็นสำหรับธุรกิจการค้า" class="scale_image" width="640" height="400" decoding="async" loading="lazy"></a>
 					                      </div>
                     <div class="wrapper">
                       <div class="post_text">
@@ -1033,7 +1071,7 @@
                     </div>
 <br/>
                     <div class="scale_image_container">
-					                        <a href="%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%A3%20%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%99%20ai.html"><img src="https://bangkokbangkok.net/%E0%B8%AD%E0%B8%9A%E0%B8%A3%E0%B8%A1%20AI.png" alt="วิทยากร ด้าน ai" class="scale_image"></a>
+					                        <a href="%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%A3%20%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%99%20ai.html"><img src="https://bangkokbangkok.net/%E0%B8%AD%E0%B8%9A%E0%B8%A3%E0%B8%A1%20AI.png" alt="วิทยากร ด้าน ai" class="scale_image" width="640" height="400" decoding="async" loading="lazy"></a>
 					                      </div>
                     <div class="wrapper">
                       <div class="post_text">
@@ -1043,7 +1081,7 @@
                     </div>
 <br/>
                     <div class="scale_image_container">
-					                        <a href="your-business-name.html"><img src="https://image.freepik.com/free-photo/two-cheerful-managers-generating-ideas-brainstorming-session_1098-19142.jpg" alt="ตั้งชื่อธุรกิจ" class="scale_image"></a>
+					                        <a href="your-business-name.html"><img src="https://image.freepik.com/free-photo/two-cheerful-managers-generating-ideas-brainstorming-session_1098-19142.jpg" alt="ตั้งชื่อธุรกิจ" class="scale_image" width="640" height="400" decoding="async" loading="lazy"></a>
 					                      </div>
                     <div class="wrapper">
                       <div class="post_text">
@@ -1058,8 +1096,8 @@
               <div class="tabs ui-tabs ui-widget ui-widget-content ui-corner-all">
                 <!--tabs navigation-->
                 <div class="clearfix tabs_conrainer">
-                  <ul class="tabs_nav clearfix ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
-                    <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="tab-1" aria-labelledby="ui-id-1" aria-selected="true"><a href="." class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1"><h3>ข่าวยอดนิยม</h3></a></li>
+                  <ul class="tabs_nav clearfix ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+                    <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active"><a href="." class="ui-tabs-anchor" id="ui-id-1"><h3>ข่าวยอดนิยม</h3></a></li>
 			  
 
 			  
@@ -1068,7 +1106,7 @@
                 </div>
 		      <br/>
 					  <div class="scale_image_container">
-		   <a href="filler.html"><img src="https://ฉีดฟิลเลอร์ที่ไหนดี.com/10%E0%B8%84%E0%B8%A5%E0%B8%B4%E0%B8%99%E0%B8%B4%E0%B8%81%E0%B8%89%E0%B8%B5%E0%B8%94%E0%B8%9F%E0%B8%B4%E0%B8%A5%E0%B9%80%E0%B8%A5%E0%B8%AD%E0%B8%A3%E0%B9%8C.jpg" alt="ฉีดฟิลเลอร์ที่ไหนดี" class="scale_image"></a>
+		   <a href="filler.html"><img src="https://ฉีดฟิลเลอร์ที่ไหนดี.com/10%E0%B8%84%E0%B8%A5%E0%B8%B4%E0%B8%99%E0%B8%B4%E0%B8%81%E0%B8%89%E0%B8%B5%E0%B8%94%E0%B8%9F%E0%B8%B4%E0%B8%A5%E0%B9%80%E0%B8%A5%E0%B8%AD%E0%B8%A3%E0%B9%8C.jpg" alt="ฉีดฟิลเลอร์ที่ไหนดี" class="scale_image" width="640" height="400" decoding="async" loading="lazy"></a>
 		   </div>
                     <div class="wrapper">
                       <div class="post_text">
@@ -1079,7 +1117,7 @@
 		      
 		      <br/>      
 					  <div class="scale_image_container">
-		   <a href="delivery-business.html"><img src="https://image.freepik.com/free-photo/food-delivery_1098-19584.jpg" alt="ฟู๊ดเดลิเวอรี่" class="scale_image"></a>
+		   <a href="delivery-business.html"><img src="https://image.freepik.com/free-photo/food-delivery_1098-19584.jpg" alt="ฟู๊ดเดลิเวอรี่" class="scale_image" width="640" height="400" decoding="async" loading="lazy"></a>
 		   </div>
                     <div class="wrapper">
                       <div class="post_text">
@@ -1089,7 +1127,7 @@
                     </div>
 		      	<br/>	      
 					  <div class="scale_image_container">
-		   <a href="pantip.html"><img src="https://www.pantip.fun/images/pantip_ads.jpg" alt="pantip" class="scale_image"></a>
+		   <a href="pantip.html"><img src="https://www.pantip.fun/images/pantip_ads.jpg" alt="pantip" class="scale_image" width="640" height="400" decoding="async" loading="lazy"></a>
 		   </div>
                     <div class="wrapper">
                       <div class="post_text">
@@ -1099,7 +1137,7 @@
                     </div>
                 <!--tabs content-->
                 <div class="tabs_content side_bar_tabs comment_tabs">
-                  <div id="tab-1" aria-labelledby="ui-id-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="true" aria-hidden="false">
+                  <div id="tab-1" aria-labelledby="ui-id-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="region" >
                     <ul class="comments_list">
                                             <!--li class="post_text">
                         <div class="comment_number">1</div>
@@ -1156,9 +1194,9 @@
 
             </div>
    
-          </div> <!--end right col-->
+          </aside> <!--end right col-->
         </div> <!--end row-->      </div> <!--end container-->
-    </div> <!--end content-->
+    </main> <!--end content-->
 
 	    <!--==============================footer=================================-->
     <!--markup footer-->
@@ -1183,4 +1221,15 @@
 
 
 
+  <script>
+    (function () {
+      var button = document.getElementById('menu_button');
+      var menu = document.getElementById('main-navigation');
+      if (!button || !menu) return;
+      button.addEventListener('click', function () {
+        var open = menu.classList.toggle('is-open');
+        button.setAttribute('aria-expanded', String(open));
+      });
+    }());
+  </script>
 </body></html>
